@@ -1,0 +1,210 @@
+﻿@model Portfolio.Models.PortfolioViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section -->
+<section class="hero" id="about">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="greeting">hi @string.Join(" ", Model.Profile.Name.Split(' ').Skip(1)).ToLower() 👋</h1>
+            <p class="intro">
+                @if (!string.IsNullOrEmpty(Model.Profile.Bio))
+                {
+                    @Model.Profile.Bio
+                }
+                else
+                {
+                    <text>Software developer passionate about building modern web applications.</text>
+                }
+            </p>
+            <div class="hero-actions">
+                @if (!string.IsNullOrEmpty(Model.Profile.ResumeUrl))
+                {
+                    <a href="@Model.Profile.ResumeUrl" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </a>
+                }
+                <div class="social-links">
+                    @if (!string.IsNullOrEmpty(Model.Profile.LinkedIn))
+                    {
+                        <a href="@Model.Profile.LinkedIn" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    }
+                    <a href="@Model.GitHubProfile.HtmlUrl" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    @if (!string.IsNullOrEmpty(Model.Profile.Email))
+                    {
+                        <a href="mailto:@Model.Profile.Email" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="@Model.GitHubProfile.AvatarUrl" alt="Profile photo" class="profile-photo" />
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="section" id="experience">
+    <div class="section-header">
+        <h2 class="section-title">experience</h2>
+        <div class="tabs">
+            <button class="tab active" data-tab="work">Work</button>
+            <button class="tab" data-tab="education">Education</button>
+        </div>
+    </div>
+
+    <!-- Work Tab -->
+    <div class="tab-content active" id="work-content">
+        @foreach (var job in Model.Profile.Experience)
+        {
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <span class="logo-letter">@job.Company[0]</span>
+                    </div>
+                    <div class="experience-info">
+                        <h3 class="experience-title">@job.Title</h3>
+                        <a href="@job.CompanyUrl" target="_blank" rel="noopener" class="company-name">@job.Company</a>
+                        <div class="experience-meta">
+                            <span class="period">@job.Period</span>
+                            @if (!string.IsNullOrEmpty(job.Type))
+                            {
+                                <span class="type-badge">@job.Type</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <ul class="experience-description">
+                    @foreach (var point in job.Description)
+                    {
+                        <li>@point</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+
+    <!-- Education Tab -->
+    <div class="tab-content" id="education-content">
+        @foreach (var edu in Model.Profile.Education)
+        {
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <span class="logo-letter">@edu.Institution[0]</span>
+                    </div>
+                    <div class="experience-info">
+                        <h3 class="experience-title">@edu.Degree</h3>
+                        <a href="@edu.InstitutionUrl" target="_blank" rel="noopener" class="company-name">@edu.Institution</a>
+                        <div class="experience-meta">
+                            <span class="period">@edu.Year</span>
+                        </div>
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(edu.Description))
+                {
+                    <p class="education-description">@edu.Description</p>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Certifications Section -->
+@if (Model.Profile.Certifications.Any())
+{
+    <section class="section" id="certifications">
+        <h2 class="section-title">licenses & certifications</h2>
+        <div class="certifications-grid">
+            @foreach (var cert in Model.Profile.Certifications)
+            {
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">@cert.Name</h3>
+                        <p class="cert-issuer">@cert.Issuer</p>
+                        <span class="cert-date">Issued @cert.IssueDate</span>
+                    </div>
+                    @if (!string.IsNullOrEmpty(cert.CredentialUrl))
+                    {
+                        <a href="@cert.CredentialUrl" target="_blank" rel="noopener" class="cert-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<!-- Skills Section -->
+@if (Model.Profile.Skills.Any())
+{
+    <section class="section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <div class="skills-container">
+            @foreach (var skill in Model.Profile.Skills)
+            {
+                <span class="skill-tag">@skill</span>
+            }
+        </div>
+    </section>
+}
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <div class="section-header">
+        <h2 class="section-title">featured projects</h2>
+        <a href="https://github.com/weekijie?tab=repositories" target="_blank" rel="noopener" class="view-more">
+            view more <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+    
+    <div class="projects-grid">
+        @foreach (var repo in Model.Repositories)
+        {
+            <a href="@repo.HtmlUrl" target="_blank" rel="noopener" class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">@repo.Name</h3>
+                    <div class="project-links">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+                <p class="project-description">
+                    @(string.IsNullOrEmpty(repo.Description) ? "No description provided" : repo.Description)
+                </p>
+                <div class="project-footer">
+                    <div class="project-stats">
+                        @if (repo.StargazersCount > 0)
+                        {
+                            <span class="stat"><i class="fas fa-star"></i> @repo.StargazersCount</span>
+                        }
+                        @if (repo.ForksCount > 0)
+                        {
+                            <span class="stat"><i class="fas fa-code-branch"></i> @repo.ForksCount</span>
+                        }
+                    </div>
+                    <div class="project-tags">
+                        @if (!string.IsNullOrEmpty(repo.Language) && repo.Language != "Unknown")
+                        {
+                            <span class="tag language-tag">@repo.Language</span>
+                        }
+                        @foreach (var topic in repo.Topics.Take(2))
+                        {
+                            <span class="tag">@topic</span>
+                        }
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</section>

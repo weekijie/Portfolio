@@ -1,0 +1,63 @@
+{
+    "name": "Wei Kijie",
+    "title": "Software Developer",
+    "bio": "Passionate software developer with expertise in building modern web applications.",
+    "location": "Singapore",
+    "email": "your.email@example.com",
+    "linkedIn": "https://linkedin.com/in/your-profile",
+    "resumeUrl": "/resume.pdf",
+    "experience": [
+        {
+            "title": "Software Developer",
+            "company": "Company Name",
+            "companyUrl": "https://company.com",
+            "period": "2023 - Present",
+            "type": "Full-time",
+            "description": [
+                "Developed and maintained web applications using ASP.NET Core",
+                "Collaborated with cross-functional teams to deliver high-quality solutions",
+                "Implemented CI/CD pipelines for automated deployments"
+            ]
+        },
+        {
+            "title": "Software Developer Intern",
+            "company": "Previous Company",
+            "companyUrl": "https://previous-company.com",
+            "period": "2022 - 2023",
+            "type": "Intern",
+            "description": [
+                "Built RESTful APIs using .NET technologies",
+                "Participated in code reviews and agile ceremonies"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "institution": "University Name",
+            "institutionUrl": "https://university.edu",
+            "year": "2022",
+            "description": "Specialized in software engineering and web development"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Microsoft Certified: Azure Developer Associate",
+            "issuer": "Microsoft",
+            "issueDate": "2024",
+            "credentialUrl": "https://learn.microsoft.com/credentials/"
+        }
+    ],
+    "skills": [
+        "C#",
+        "ASP.NET Core",
+        "JavaScript",
+        "TypeScript",
+        "SQL Server",
+        "Azure",
+        "Git",
+        "Docker",
+        "React",
+        "HTML/CSS"
+    ]
+}

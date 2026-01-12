@@ -1,0 +1,60 @@
+{
+    "name": "Wee Ki Jie",
+    "title": "Software Developer",
+    "bio": "Passionate software developer with expertise in building modern web applications.",
+    "location": "Singapore",
+    "email": "kijiejob@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/wee-ki-jie-b82336209/",
+    "resumeUrl": "/resume.pdf",
+    "experience": [
+        {
+            "title": "Software Developer",
+            "company": "Company Name",
+            "companyUrl": "https://company.com",
+            "period": "2023 - Present",
+            "type": "Full-time",
+            "description": [
+                "Developed and maintained web applications using ASP.NET Core",
+                "Collaborated with cross-functional teams to deliver high-quality solutions",
+                "Implemented CI/CD pipelines for automated deployments"
+            ]
+        },
+        {
+            "title": "Mobile Application Developer",
+            "company": "Essilor Group",
+            "companyUrl": "https://www.linkedin.com/company/essilor/",
+            "period": "Mar 2022 - Aug 2022",
+            "type": "Intern",
+            "description": []
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "institution": "University Name",
+            "institutionUrl": "https://university.edu",
+            "year": "2022",
+            "description": "Specialized in software engineering and web development"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Microsoft Certified: Azure Developer Associate",
+            "issuer": "Microsoft",
+            "issueDate": "2024",
+            "credentialUrl": "https://learn.microsoft.com/credentials/"
+        }
+    ],
+    "skills": [
+        "C#",
+        "ASP.NET Core",
+        "JavaScript",
+        "TypeScript",
+        "SQL Server",
+        "Azure",
+        "Git",
+        "Docker",
+        "React",
+        "HTML/CSS"
+    ]
+}
