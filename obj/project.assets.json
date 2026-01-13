@@ -39,23 +39,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2447545\\.nuget\\packages\\": {},
+    "C:\\Users\\weeki\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2447545\\.gemini\\antigravity\\scratch\\Portfolio\\Portfolio.csproj",
+      "projectUniqueName": "C:\\Users\\weeki\\bank\\Portfolio\\Portfolio.csproj",
       "projectName": "Portfolio",
-      "projectPath": "C:\\Users\\2447545\\.gemini\\antigravity\\scratch\\Portfolio\\Portfolio.csproj",
-      "packagesPath": "C:\\Users\\2447545\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2447545\\.gemini\\antigravity\\scratch\\Portfolio\\obj\\",
+      "projectPath": "C:\\Users\\weeki\\bank\\Portfolio\\Portfolio.csproj",
+      "packagesPath": "C:\\Users\\weeki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\weeki\\bank\\Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\2447545\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\weeki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

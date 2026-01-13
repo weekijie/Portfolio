@@ -1,63 +1,110 @@
 {
-    "name": "Wei Kijie",
+    "name": "Wee Ki Jie",
     "title": "Software Developer",
     "bio": "Passionate software developer with expertise in building modern web applications.",
     "location": "Singapore",
-    "email": "your.email@example.com",
-    "linkedIn": "https://linkedin.com/in/your-profile",
+    "email": "kijiejob@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/wee-ki-jie-b82336209/",
     "resumeUrl": "/resume.pdf",
     "experience": [
         {
-            "title": "Software Developer",
-            "company": "Company Name",
-            "companyUrl": "https://company.com",
-            "period": "2023 - Present",
+            "title": "Programmer Analyst Trainee",
+            "company": "Cognizant",
+            "companyUrl": "https://www.cognizant.com/",
+            "period": "Sep 2025 - Present",
             "type": "Full-time",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQFZH4svu5BTZA/company-logo_100_100/B4EZk_EfNgHgAU-/0/1757699778309/cognizant_logo?e=1769644800&v=beta&t=jCd0GLILzD8YpIX7iTo9MRyCZ-RUxpWMU7MbIpA5vIs",
             "description": [
-                "Developed and maintained web applications using ASP.NET Core",
-                "Collaborated with cross-functional teams to deliver high-quality solutions",
-                "Implemented CI/CD pipelines for automated deployments"
+                "Supporting a large-scale, highly customized Dynamics 365 implementation for thousands of users, focusing on stability and security.",
+                "Resolved complex production issues through reverse-engineering legacy code and remediating VAPT security findings.",
+                "Managed releases, hotfixes, and data patches while working closely with IT and business teams to communicate risks and root causes."
             ]
         },
         {
-            "title": "Software Developer Intern",
-            "company": "Previous Company",
-            "companyUrl": "https://previous-company.com",
-            "period": "2022 - 2023",
+            "title": "Mobile Application Developer",
+            "company": "EssilorLuxottica",
+            "companyUrl": "https://www.linkedin.com/company/essilorluxottica/",
+            "period": "Mar 2022 - Aug 2022",
             "type": "Intern",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQH_Sj9ZfN8pAQ/company-logo_100_100/company-logo_100_100/0/1642704101327/essilorluxottica_logo?e=1769644800&v=beta&t=mVfsXzD9EqFycB-rIfJhZcCGx5eQ4qn4rA9gPjDOC48",
             "description": [
-                "Built RESTful APIs using .NET technologies",
-                "Participated in code reviews and agile ceremonies"
+                "Developed a mobile app for biometric facial measurement using ML Kit’s Face Detection API to support progressive lens fitting.",
+                "Built custom eyeglass detection and tracking models in PyTorch and applied OpenCV for lens contour extraction and optometric metric computation.",
+                "Created a real-time AR eyewear virtual try-on web app with Jeeliz VTO and gesture-based interaction via MediaPipe/Handsfree.js, enhanced by secondary-camera hand pose tracking"
             ]
         }
     ],
     "education": [
         {
-            "degree": "Bachelor of Science in Computer Science",
-            "institution": "University Name",
-            "institutionUrl": "https://university.edu",
-            "year": "2022",
+            "degree": "Diploma in Infocomm & Media Engineering",
+            "institution": "Nanyang Polytechnic",
+            "institutionUrl": "https://www.nyp.edu.sg/",
+            "year": "2020 - 2023",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQHwImgI6QnJLw/company-logo_100_100/company-logo_100_100/0/1630592287239/nanyang_polytechnic_logo?e=1769644800&v=beta&t=RpHtGp3fJeRtrZgiVFWY9C6Jctirie2Cf97Dvnxdo0c",
             "description": "Specialized in software engineering and web development"
         }
     ],
     "certifications": [
         {
-            "name": "Microsoft Certified: Azure Developer Associate",
-            "issuer": "Microsoft",
-            "issueDate": "2024",
-            "credentialUrl": "https://learn.microsoft.com/credentials/"
+            "name": "Git Complete: The definitive, step-by-step guide to Git",
+            "issuer": "Udemy",
+            "issueDate": "Sep 2025",
+            "credentialUrl": "https://www.udemy.com/certificate/UC-d5bd6fd3-682a-418a-982f-f96a5ea72df2/",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_100_100/company-logo_100_100/0/1723593046388/udemy_logo?e=1769644800&v=beta&t=u84weRqbenOIjKFhUfal_OlblPHI7PS0IxO13ILFgOA"
+        },
+        {
+            "name": "Understanding Agile 2025 | Complete Beginner’s Guide",
+            "issuer": "Udemy",
+            "issueDate": "Sep 2025",
+            "credentialUrl": "https://udemy.com/certificate/UC-13914887-e2c3-4b4e-9d54-23a43b6224b2/",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_100_100/company-logo_100_100/0/1723593046388/udemy_logo?e=1769644800&v=beta&t=u84weRqbenOIjKFhUfal_OlblPHI7PS0IxO13ILFgOA"
+        }
+    ],
+    "competitions": [
+        {
+            "name": "TIL-AI Brainhack 2025",
+            "award": "Semi Finalist ",
+            "organizer": "Defence Science and Technology Agency",
+            "date": "May 2025",
+            "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques for a specific use case. Developed and trained a reinforcement learning (RL) model for an autonomous robotic car to navigate the environment using a point-based reward system, competing against multiple teams in alternating “hunter” and “hunted” roles.",
+            "credentialUrl": "https://certificates.nextid.com/certificate?id=f1c86e33-fe2f-4019-a187-a90ec584f4d0",
+            "proposalUrl": "",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQGBxsnmmhvsMg/company-logo_100_100/company-logo_100_100/0/1631396166213?e=1769644800&v=beta&t=8L59yCXpLFk9qVhUN8_CIHIXzyCSDvbu3ulsjylanvQ",
+            "imageUrl": "https://media.licdn.com/dms/image/v2/D562DAQHzn5SWQ5BD-g/profile-treasury-image-shrink_800_800/B56ZidPoO.H0AY-/0/1754984777441?e=1768928400&v=beta&t=MqpgN0re5nxpMBxPnQlRPpD1lfKhYUT77EbyIG8VKAU"
+        },
+        {
+            "name": "TIL-AI Brainhack 2024",
+            "award": "Semi Finalist",
+            "organizer": "Defence Science and Technology Agency",
+            "date": "May 2024",
+            "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques, and evaluated through competition-style rankings based on accuracy and inference speed.",
+            "credentialUrl": "",
+            "proposalUrl": "",
+            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQGBxsnmmhvsMg/company-logo_100_100/company-logo_100_100/0/1631396166213?e=1769644800&v=beta&t=8L59yCXpLFk9qVhUN8_CIHIXzyCSDvbu3ulsjylanvQ",
+            "imageUrl": ""
+        },
+        {
+            "name": "AWS Build On Singapore 2020",
+            "award": "Proposal Accepted",
+            "organizer": "AWS Educate",
+            "date": "Sep 2020",
+            "description": "Proposal(Education LMS) accepted for AWS Build On 2020 Hackathon Singapore, focused on solving real-world problems using AWS services. Selected among submitted entries to move forward into development.",
+            "credentialUrl": "https://media.licdn.com/dms/image/v2/D562DAQFVANY_8XItCA/profile-treasury-document-images_800/B56ZdzxPuxHoAs-/1/1749993985237?e=1769040000&v=beta&t=xnznH5h8GuxRPQFiantReVUXmTOLlktM7LKVodarc50",
+            "proposalUrl": "/documents/TeamMink.pdf",
+            "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkgqLCykI7BAv3Dr3gdH6n0HG40IP7-JwLg&s",
+            "imageUrl": ""
         }
     ],
     "skills": [
         "C#",
         "ASP.NET Core",
         "JavaScript",
-        "TypeScript",
+        "HTML/CSS",
         "SQL Server",
-        "Azure",
         "Git",
-        "Docker",
-        "React",
-        "HTML/CSS"
+        "Python",
+        "Java",
+        "Android Studio",
+        "Microsoft Dynamics CRM"
     ]
 }
