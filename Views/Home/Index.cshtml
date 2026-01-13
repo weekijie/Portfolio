@@ -7,7 +7,7 @@
 <section class="hero" id="about">
     <div class="hero-content">
         <div class="hero-text">
-            <h1 class="greeting">hi @string.Join(" ", Model.Profile.Name.Split(' ').Skip(1)).ToLower() 👋</h1>
+            <h1 class="greeting">hi @string.Join(" ", Model.Profile.Name.Split(' ').Skip(1)).ToLower() here 👋</h1>
             <p class="intro">
                 @if (!string.IsNullOrEmpty(Model.Profile.Bio))
                 {
@@ -28,11 +28,13 @@
                 <div class="social-links">
                     @if (!string.IsNullOrEmpty(Model.Profile.LinkedIn))
                     {
-                        <a href="@Model.Profile.LinkedIn" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <a href="@Model.Profile.LinkedIn" target="_blank" rel="noopener" class="social-link"
+                            aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     }
-                    <a href="@Model.GitHubProfile.HtmlUrl" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <a href="@Model.GitHubProfile.HtmlUrl" target="_blank" rel="noopener" class="social-link"
+                        aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     @if (!string.IsNullOrEmpty(Model.Profile.Email))
@@ -67,7 +69,14 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div class="company-logo">
-                        <span class="logo-letter">@job.Company[0]</span>
+                        @if (!string.IsNullOrEmpty(job.IconUrl))
+                        {
+                            <img src="@job.IconUrl" alt="@job.Company" class="logo-image" />
+                        }
+                        else
+                        {
+                            <span class="logo-letter">@job.Company[0]</span>
+                        }
                     </div>
                     <div class="experience-info">
                         <h3 class="experience-title">@job.Title</h3>
@@ -98,11 +107,19 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div class="company-logo">
-                        <span class="logo-letter">@edu.Institution[0]</span>
+                        @if (!string.IsNullOrEmpty(edu.IconUrl))
+                        {
+                            <img src="@edu.IconUrl" alt="@edu.Institution" class="logo-image" />
+                        }
+                        else
+                        {
+                            <span class="logo-letter">@edu.Institution[0]</span>
+                        }
                     </div>
                     <div class="experience-info">
                         <h3 class="experience-title">@edu.Degree</h3>
-                        <a href="@edu.InstitutionUrl" target="_blank" rel="noopener" class="company-name">@edu.Institution</a>
+                        <a href="@edu.InstitutionUrl" target="_blank" rel="noopener"
+                            class="company-name">@edu.Institution</a>
                         <div class="experience-meta">
                             <span class="period">@edu.Year</span>
                         </div>
@@ -127,7 +144,14 @@
             {
                 <div class="certification-card">
                     <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                        @if (!string.IsNullOrEmpty(cert.IconUrl))
+                        {
+                            <img src="@cert.IconUrl" alt="@cert.Issuer" class="logo-image" />
+                        }
+                        else
+                        {
+                            <i class="fas fa-certificate"></i>
+                        }
                     </div>
                     <div class="cert-info">
                         <h3 class="cert-name">@cert.Name</h3>
@@ -146,20 +170,6 @@
     </section>
 }
 
-<!-- Skills Section -->
-@if (Model.Profile.Skills.Any())
-{
-    <section class="section" id="skills">
-        <h2 class="section-title">skills</h2>
-        <div class="skills-container">
-            @foreach (var skill in Model.Profile.Skills)
-            {
-                <span class="skill-tag">@skill</span>
-            }
-        </div>
-    </section>
-}
-
 <!-- Projects Section -->
 <section class="section" id="projects">
     <div class="section-header">
@@ -168,7 +178,7 @@
             view more <i class="fas fa-arrow-right"></i>
         </a>
     </div>
-    
+
     <div class="projects-grid">
         @foreach (var repo in Model.Repositories)
         {
@@ -208,3 +218,92 @@
         }
     </div>
 </section>
+
+<!-- Competitions Section -->
+@if (Model.Profile.Competitions.Any())
+{
+    <section class="section" id="competitions">
+        <h2 class="section-title">hackathons & competitions</h2>
+        <div class="competitions-grid">
+            @foreach (var comp in Model.Profile.Competitions)
+            {
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <div class="comp-icon-wrapper">
+                            @if (!string.IsNullOrEmpty(comp.IconUrl))
+                            {
+                                <img src="@comp.IconUrl" alt="@comp.Organizer" class="logo-image" />
+                            }
+                            else
+                            {
+                                <div class="comp-icon-placeholder">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                            }
+                        </div>
+                        <div class="comp-header-info">
+                            <h3 class="comp-name">@comp.Name</h3>
+                            <div class="comp-organizer">@comp.Organizer</div>
+                        </div>
+                        @if (!string.IsNullOrEmpty(comp.CredentialUrl))
+                        {
+                            <a href="@comp.CredentialUrl" target="_blank" rel="noopener" class="comp-link" title="View Credential">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        }
+                    </div>
+
+                    <div class="comp-meta">
+                        <span class="award-badge"><i class="fas fa-medal"></i> @comp.Award</span>
+                        <span class="comp-date">@comp.Date</span>
+                    </div>
+
+                    <p class="comp-description">@comp.Description</p>
+
+                    @if (!string.IsNullOrEmpty(comp.ProposalUrl))
+                    {
+                        <details class="comp-proposal">
+                            <summary class="proposal-toggle">
+                                <i class="fas fa-file-pdf"></i> View Proposal / Document
+                            </summary>
+                            <div class="proposal-content">
+                                <div class="proposal-actions"
+                                    style="padding: 0.5rem; text-align: right; background: var(--bg-secondary); border-bottom: 1px solid var(--border);">
+                                    <a href="@comp.ProposalUrl" target="_blank" rel="noopener"
+                                        style="font-size: 0.9rem; color: var(--accent); text-decoration: none;">
+                                        <i class="fas fa-external-link-alt"></i> Open in new tab
+                                    </a>
+                                </div>
+                                <iframe src="@comp.ProposalUrl" class="proposal-frame" title="Proposal Document" loading="lazy">
+                                    Your browser does not support inline PDFs. <a href="@comp.ProposalUrl" target="_blank">Download
+                                        PDF</a>
+                                </iframe>
+                            </div>
+                        </details>
+                    }
+
+                    @if (!string.IsNullOrEmpty(comp.ImageUrl))
+                    {
+                        <div class="comp-image-container">
+                            <img src="@comp.ImageUrl" alt="@comp.Name" class="comp-featured-image" />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<!-- Skills Section -->
+@if (Model.Profile.Skills.Any())
+{
+    <section class="section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <div class="skills-container">
+            @foreach (var skill in Model.Profile.Skills)
+            {
+                <span class="skill-tag">@skill</span>
+            }
+        </div>
+    </section>
+}

@@ -12,7 +12,21 @@ public class ProfileData
     public List<Experience> Experience { get; set; } = new();
     public List<Education> Education { get; set; } = new();
     public List<Certification> Certifications { get; set; } = new();
+    public List<Competition> Competitions { get; set; } = new();
     public List<string> Skills { get; set; } = new();
+}
+
+public class Competition
+{
+    public string Name { get; set; } = string.Empty;
+    public string Award { get; set; } = string.Empty;
+    public string Organizer { get; set; } = string.Empty;
+    public string Date { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public string CredentialUrl { get; set; } = string.Empty;
+    public string ProposalUrl { get; set; } = string.Empty;
+    public string IconUrl { get; set; } = string.Empty;
+    public string ImageUrl { get; set; } = string.Empty;
 }
 
 public class Experience
@@ -22,6 +36,7 @@ public class Experience
     public string CompanyUrl { get; set; } = string.Empty;
     public string Period { get; set; } = string.Empty;
     public string Type { get; set; } = string.Empty; // Full-time, Intern, Contract
+    public string IconUrl { get; set; } = string.Empty;
     public List<string> Description { get; set; } = new();
 }
 
@@ -31,6 +46,7 @@ public class Education
     public string Institution { get; set; } = string.Empty;
     public string InstitutionUrl { get; set; } = string.Empty;
     public string Year { get; set; } = string.Empty;
+    public string IconUrl { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
 }
 
@@ -40,4 +56,5 @@ public class Certification
     public string Issuer { get; set; } = string.Empty;
     public string IssueDate { get; set; } = string.Empty;
     public string CredentialUrl { get; set; } = string.Empty;
+    public string IconUrl { get; set; } = string.Empty;
 }
