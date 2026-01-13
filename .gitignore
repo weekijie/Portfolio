@@ -1,7 +1,18 @@
-# Build results
+# Build Results
 [Bb]in/
 [Oo]bj/
 
-# Documents
+# Visual Studio / User Specific
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# Sensitive Documents
 wwwroot/documents/*.pdf
 wwwroot/documents/TeamMink.pdf
