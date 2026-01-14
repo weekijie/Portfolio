@@ -13,9 +13,5 @@
 .DS_Store
 Thumbs.db
 
-# Sensitive Documents
-wwwroot/documents/*.pdf
-wwwroot/documents/TeamMink.pdf
-
 # Secrets / Production Config
 appsettings.Production.json
