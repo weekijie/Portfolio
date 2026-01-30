@@ -13,7 +13,7 @@
             "companyUrl": "https://www.cognizant.com/",
             "period": "Sep 2025 - Present",
             "type": "Full-time",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQFZH4svu5BTZA/company-logo_100_100/B4EZk_EfNgHgAU-/0/1757699778309/cognizant_logo?e=1769644800&v=beta&t=jCd0GLILzD8YpIX7iTo9MRyCZ-RUxpWMU7MbIpA5vIs",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=cognizant.com&sz=128",
             "description": [
                 "Supporting a large-scale, highly customized Dynamics 365 implementation for thousands of users, focusing on stability and security.",
                 "Resolved complex production issues through reverse-engineering legacy code and remediating VAPT security findings.",
@@ -26,7 +26,7 @@
             "companyUrl": "https://www.linkedin.com/company/essilorluxottica/",
             "period": "Mar 2022 - Aug 2022",
             "type": "Intern",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQH_Sj9ZfN8pAQ/company-logo_100_100/company-logo_100_100/0/1642704101327/essilorluxottica_logo?e=1769644800&v=beta&t=mVfsXzD9EqFycB-rIfJhZcCGx5eQ4qn4rA9gPjDOC48",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=essilorluxottica.com&sz=128",
             "description": [
                 "Developed a mobile app for biometric facial measurement using ML Kit’s Face Detection API to support progressive lens fitting.",
                 "Built custom eyeglass detection and tracking models in PyTorch and applied OpenCV for lens contour extraction and optometric metric computation.",
@@ -40,7 +40,7 @@
             "institution": "Nanyang Polytechnic",
             "institutionUrl": "https://www.nyp.edu.sg/",
             "year": "2020 - 2023",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQHwImgI6QnJLw/company-logo_100_100/company-logo_100_100/0/1630592287239/nanyang_polytechnic_logo?e=1769644800&v=beta&t=RpHtGp3fJeRtrZgiVFWY9C6Jctirie2Cf97Dvnxdo0c",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=nyp.edu.sg&sz=128",
             "description": "Specialized in software engineering and web development"
         }
     ],
@@ -50,21 +50,21 @@
             "issuer": "Microsoft",
             "issueDate": "Jan 2026",
             "credentialUrl": "https://learn.microsoft.com/en-us/users/KiJie-7466/credentials/7D57AB1F9DF5A1E0?ref=https%3A%2F%2Fwww.linkedin.com%2F",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1770249600&v=beta&t=78UET9wRbKhyub7csVyb3rWYFBRWE_6YLVdZeQN35ZE"
+            "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
         },
         {
             "name": "Git Complete: The definitive, step-by-step guide to Git",
             "issuer": "Udemy",
             "issueDate": "Sep 2025",
             "credentialUrl": "https://www.udemy.com/certificate/UC-d5bd6fd3-682a-418a-982f-f96a5ea72df2/",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_100_100/company-logo_100_100/0/1723593046388/udemy_logo?e=1769644800&v=beta&t=u84weRqbenOIjKFhUfal_OlblPHI7PS0IxO13ILFgOA"
+            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
         },
         {
             "name": "Understanding Agile 2025 | Complete Beginner’s Guide",
             "issuer": "Udemy",
             "issueDate": "Sep 2025",
             "credentialUrl": "https://udemy.com/certificate/UC-13914887-e2c3-4b4e-9d54-23a43b6224b2/",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_100_100/company-logo_100_100/0/1723593046388/udemy_logo?e=1769644800&v=beta&t=u84weRqbenOIjKFhUfal_OlblPHI7PS0IxO13ILFgOA"
+            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
         }
     ],
     "competitions": [
@@ -76,7 +76,7 @@
             "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques for a specific use case. Trained and optimized a reinforcement learning (RL) model for an autonomous robotic car to navigate the environment using a point-based reward system, competing against multiple teams in alternating “hunter” and “hunted” roles.",
             "credentialUrl": "https://certificates.nextid.com/certificate?id=f1c86e33-fe2f-4019-a187-a90ec584f4d0",
             "proposalUrl": "",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQGBxsnmmhvsMg/company-logo_100_100/company-logo_100_100/0/1631396166213?e=1769644800&v=beta&t=8L59yCXpLFk9qVhUN8_CIHIXzyCSDvbu3ulsjylanvQ",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=dsta.gov.sg&sz=128",
             "imageUrl": "https://media.licdn.com/dms/image/v2/D5622AQHoYwrdBWO4hg/feedshare-shrink_800/B56Zd2_trtGoAk-/0/1750048105591?e=1770854400&v=beta&t=jBGim6PcuO6GElT_c5VaH5Tt0cNlFwB5q_T9PAqoUqc"
         },
         {
@@ -87,7 +87,7 @@
             "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques, and evaluated through competition-style rankings based on accuracy and inference speed.",
             "credentialUrl": "",
             "proposalUrl": "",
-            "iconUrl": "https://media.licdn.com/dms/image/v2/C510BAQGBxsnmmhvsMg/company-logo_100_100/company-logo_100_100/0/1631396166213?e=1769644800&v=beta&t=8L59yCXpLFk9qVhUN8_CIHIXzyCSDvbu3ulsjylanvQ",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=dsta.gov.sg&sz=128",
             "imageUrl": ""
         },
         {
@@ -98,7 +98,7 @@
             "description": "Proposal(Education LMS) accepted for AWS Build On 2020 Hackathon Singapore, focused on solving real-world problems using AWS services. Selected among submitted entries to move forward into development.",
             "credentialUrl": "https://media.licdn.com/dms/image/v2/D562DAQFVANY_8XItCA/profile-treasury-document-images_800/B56ZdzxPuxHoAs-/1/1749993985237?e=1769040000&v=beta&t=xnznH5h8GuxRPQFiantReVUXmTOLlktM7LKVodarc50",
             "proposalUrl": "/documents/TeamMink.pdf",
-            "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkgqLCykI7BAv3Dr3gdH6n0HG40IP7-JwLg&s",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128",
             "imageUrl": ""
         }
     ],
