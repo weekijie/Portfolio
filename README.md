@@ -1,5 +1,12 @@
 # Portfolio Website
 
+## Legacy Snapshot
+
+This branch preserves the pre-GitHub-Pages ASP.NET Core / Railway version of the portfolio.
+
+- Active site and ongoing development now live on `main`
+- Permanent backup tag for this version: `aspnet-final`
+
 A personal portfolio website built with **ASP.NET Core MVC** (.NET 10). Features a modern, responsive design with dark/light theme support.
 
 **Live Demo**: [weekijie.up.railway.app](https://weekijie.up.railway.app)
