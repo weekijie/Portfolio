@@ -47,6 +47,13 @@ Target URL:
 
 - `https://weekijie.github.io/Portfolio/`
 
+## Legacy Snapshot
+
+The old ASP.NET Core / Railway version is preserved separately:
+
+- branch: `pre-pages-migration`
+- tag: `aspnet-final`
+
 ## Required Secrets
 
 Optional EmailJS secrets for contact form:
@@ -72,6 +79,4 @@ scripts/
   deploy-pages.yml
 ```
 
-## Legacy App
-
-Old ASP.NET Core / Railway version is preserved in git history. A local safety branch named `pre-pages-migration` was created before this rewrite.
+The legacy branch exists for backup and reference only. Active development now happens on the GitHub Pages implementation in `main`.
