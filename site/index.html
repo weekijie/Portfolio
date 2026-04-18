@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Wee Ki Jie - Software Developer specializing in .NET, Python, and enterprise applications" />
+    <meta name="author" content="Wee Ki Jie" />
+    <meta name="theme-color" content="#0077b5" />
+    <title>Wee Ki Jie | Portfolio</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{SITE_URL}}" />
+    <meta property="og:title" content="Wee Ki Jie - Software Developer Portfolio" />
+    <meta property="og:description"
+        content="Forward-thinking developer with a passion for AI and Machine Learning, backed by a strong background in enterprise-grade engineering." />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/94150146?v=4" />
+    <meta property="og:site_name" content="Wee Ki Jie Portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="{{SITE_URL}}" />
+    <meta name="twitter:title" content="Wee Ki Jie - Software Developer Portfolio" />
+    <meta name="twitter:description"
+        content="Forward-thinking developer with a passion for AI and Machine Learning, backed by a strong background in enterprise-grade engineering." />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/94150146?v=4" />
+
+    <link rel="canonical" href="{{SITE_URL}}" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Wee Ki Jie",
+        "url": "{{SITE_URL}}",
+        "jobTitle": "Software Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Cognizant"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Nanyang Polytechnic"
+        },
+        "sameAs": [
+            "https://github.com/weekijie",
+            "https://www.linkedin.com/in/weekijie/"
+        ],
+        "knowsAbout": ["C#", "ASP.NET Core", "Python", "JavaScript", "Microsoft Dynamics 365"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-logo">
+                <span class="logo-text">kijie.</span>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">about</a>
+                <a href="#experience" class="nav-link">experience</a>
+                <a href="#projects" class="nav-link">projects</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="greeting">hi!</h1>
+                    <p class="intro" id="introText">
+                        Forward-thinking developer with a passion for AI and Machine Learning, backed by a strong
+                        background in enterprise-grade engineering.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#" id="resumeButton" class="btn btn-primary is-hidden" target="_blank" rel="noopener">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                        <div class="social-links">
+                            <a href="#" id="linkedinLink" target="_blank" rel="noopener" class="social-link is-hidden"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/weekijie" id="githubHeroLink" target="_blank" rel="noopener"
+                                class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" id="emailHeroLink" class="social-link is-hidden" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://github.com/weekijie.png?size=300" alt="Profile photo" class="profile-photo"
+                        id="profilePhoto" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">experience</h2>
+                <div class="tabs">
+                    <button class="tab active" data-tab="work">Work</button>
+                    <button class="tab" data-tab="education">Education</button>
+                </div>
+            </div>
+            <div class="tab-content active" id="work-content"><div id="workList"></div></div>
+            <div class="tab-content" id="education-content"><div id="educationList"></div></div>
+        </section>
+
+        <section class="section" id="certifications-section">
+            <h2 class="section-title">licenses & certifications</h2>
+            <div class="certifications-grid" id="certificationsList"></div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">featured projects</h2>
+                <a href="https://github.com/weekijie?tab=repositories" id="viewMoreProjects" target="_blank"
+                    rel="noopener" class="view-more">
+                    view more <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="projects-grid" id="projectsList"></div>
+        </section>
+
+        <section class="section" id="competitions-section">
+            <h2 class="section-title">hackathons & competitions</h2>
+            <div class="competitions-grid" id="competitionsList"></div>
+        </section>
+
+        <section class="section" id="skills-section">
+            <h2 class="section-title">skills</h2>
+            <div class="skills-container" id="skillsList"></div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section-title">get in touch</h2>
+            <div class="contact-container">
+                <p class="contact-intro">
+                    Have a question or want to work together? Feel free to reach out!
+                </p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="from_name">Name</label>
+                        <input type="text" id="from_name" name="from_name" required placeholder="Your name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reply_to">Email</label>
+                        <input type="email" id="reply_to" name="reply_to" required placeholder="your@email.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/weekijie/" id="linkedinFooterLink" target="_blank" rel="noopener"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/weekijie" id="githubFooterLink" target="_blank" rel="noopener"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:kijiejob@gmail.com" id="emailFooterLink" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; <span id="footerYear"></span> kijie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

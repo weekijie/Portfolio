@@ -1,0 +1,118 @@
+{
+    "name": "Wee Ki Jie",
+    "title": "Software Developer",
+    "bio": "Forward-thinking developer with a passion for AI and Machine Learning, backed by a strong background in enterprise-grade engineering.",
+    "location": "Singapore",
+    "email": "kijiejob@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/weekijie/",
+    "resumeUrl": "documents/weekijie-resume.pdf",
+    "experience": [
+        {
+            "title": "Programmer Analyst Trainee",
+            "company": "Cognizant",
+            "companyUrl": "https://www.cognizant.com/",
+            "period": "Sep 2025 - Present",
+            "type": "Full-time",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=cognizant.com&sz=128",
+            "description": [
+                "Supporting a large-scale, highly customized Dynamics 365 implementation for thousands of users, focusing on stability and security.",
+                "Resolved complex production issues through reverse-engineering legacy code and remediating VAPT security findings.",
+                "Managed releases, hotfixes, and data patches while working closely with IT and business teams to communicate risks and root causes."
+            ]
+        },
+        {
+            "title": "Mobile Application Developer",
+            "company": "EssilorLuxottica",
+            "companyUrl": "https://www.linkedin.com/company/essilorluxottica/",
+            "period": "Mar 2022 - Aug 2022",
+            "type": "Intern",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=essilorluxottica.com&sz=128",
+            "description": [
+                "Developed a mobile app for biometric facial measurement using ML Kit's Face Detection API to support progressive lens fitting.",
+                "Built custom eyeglass detection and tracking models in PyTorch and applied OpenCV for lens contour extraction and optometric metric computation.",
+                "Created a real-time AR eyewear virtual try-on web app with Jeeliz VTO and gesture-based interaction via MediaPipe/Handsfree.js, enhanced by secondary-camera hand pose tracking."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Diploma in Infocomm & Media Engineering",
+            "institution": "Nanyang Polytechnic",
+            "institutionUrl": "https://www.nyp.edu.sg/",
+            "year": "2020 - 2023",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=nyp.edu.sg&sz=128",
+            "description": "Specialized in software engineering and web development"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "GitHub Copilot",
+            "issuer": "Microsoft",
+            "issueDate": "Jan 2026",
+            "credentialUrl": "https://learn.microsoft.com/en-us/users/KiJie-7466/credentials/7D57AB1F9DF5A1E0?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
+        },
+        {
+            "name": "Git Complete: The definitive, step-by-step guide to Git",
+            "issuer": "Udemy",
+            "issueDate": "Sep 2025",
+            "credentialUrl": "https://www.udemy.com/certificate/UC-d5bd6fd3-682a-418a-982f-f96a5ea72df2/",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
+        },
+        {
+            "name": "Understanding Agile 2025 | Complete Beginner's Guide",
+            "issuer": "Udemy",
+            "issueDate": "Sep 2025",
+            "credentialUrl": "https://udemy.com/certificate/UC-13914887-e2c3-4b4e-9d54-23a43b6224b2/",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
+        }
+    ],
+    "competitions": [
+        {
+            "name": "TIL-AI Brainhack 2025",
+            "award": "Semi Finalist",
+            "organizer": "Defence Science and Technology Agency",
+            "date": "May 2025",
+            "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques for a specific use case. Trained and optimized a reinforcement learning (RL) model for an autonomous robotic car to navigate the environment using a point-based reward system, competing against multiple teams in alternating \"hunter\" and \"hunted\" roles.",
+            "credentialUrl": "https://certificates.nextid.com/certificate?id=f1c86e33-fe2f-4019-a187-a90ec584f4d0",
+            "proposalUrl": "",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=dsta.gov.sg&sz=128",
+            "imageUrl": "https://media.licdn.com/dms/image/v2/D5622AQHoYwrdBWO4hg/feedshare-shrink_800/B56Zd2_trtGoAk-/0/1750048105591?e=1770854400&v=beta&t=jBGim6PcuO6GElT_c5VaH5Tt0cNlFwB5q_T9PAqoUqc"
+        },
+        {
+            "name": "TIL-AI Brainhack 2024",
+            "award": "Semi Finalist",
+            "organizer": "Defence Science and Technology Agency",
+            "date": "May 2024",
+            "description": "Trained an Automatic Speech Recognition (ASR) model using Whisper, fine-tuned with a custom dataset and data augmentation techniques, and evaluated through competition-style rankings based on accuracy and inference speed.",
+            "credentialUrl": "",
+            "proposalUrl": "",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=dsta.gov.sg&sz=128",
+            "imageUrl": ""
+        },
+        {
+            "name": "AWS Build On Singapore 2020",
+            "award": "Proposal Accepted",
+            "organizer": "AWS Educate",
+            "date": "Sep 2020",
+            "description": "Proposal(Education LMS) accepted for AWS Build On 2020 Hackathon Singapore, focused on solving real-world problems using AWS services. Selected among submitted entries to move forward into development.",
+            "credentialUrl": "https://media.licdn.com/dms/image/v2/D562DAQFVANY_8XItCA/profile-treasury-document-images_800/B56ZdzxPuxHoAs-/1/1749993985237?e=1769040000&v=beta&t=xnznH5h8GuxRPQFiantReVUXmTOLlktM7LKVodarc50",
+            "proposalUrl": "documents/TeamMink.pdf",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128",
+            "imageUrl": ""
+        }
+    ],
+    "skills": [
+        "C#",
+        "ASP.NET Core",
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML/CSS",
+        "SQL Server",
+        "Microsoft Dynamics 365",
+        "Git",
+        "Android Studio",
+        "Agile"
+    ]
+}

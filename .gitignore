@@ -1,6 +1,7 @@
 # Build Results
 [Bb]in/
 [Oo]bj/
+dist/
 
 # Visual Studio / User Specific
 .vs/

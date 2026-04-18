@@ -1,90 +1,77 @@
 # Portfolio Website
 
-A personal portfolio website built with **ASP.NET Core MVC** (.NET 10). Features a modern, responsive design with dark/light theme support.
+Personal portfolio site for Wee Ki Jie, now built as a static GitHub Pages site.
 
-**Live Demo**: [weekijie.up.railway.app](https://weekijie.up.railway.app)
+## Stack
 
-## Features
+- HTML, CSS, vanilla JavaScript
+- JSON content files in `site/data/`
+- GitHub Pages for hosting
+- GitHub Actions for build + deploy
+- EmailJS for contact form delivery
 
-- **Dynamic Content** - Profile data managed via `Data/profile.json`
-- **GitHub Integration** - Auto-fetches repositories and profile stats
-- **Contact Form** - Serverless email via EmailJS
-- **Dark/Light Theme** - System preference detection with manual toggle
-- **Mobile Responsive** - Hamburger menu for mobile navigation
-- **PDF Viewer** - Embedded proposal/document viewer
-- **Performance Optimized** - Lazy loading, Brotli/Gzip compression, caching
-- **SEO Ready** - Open Graph, Twitter Cards, JSON-LD structured data
+## Content Model
 
-## Tech Stack
+Main editable content lives in `site/data/profile.json`.
 
-| Category | Technology |
-|----------|------------|
-| Framework | ASP.NET Core MVC (.NET 10) |
-| Language | C# |
-| Styling | Vanilla CSS (CSS Variables) |
-| Icons | Font Awesome 6 |
-| Fonts | Google Fonts (Inter) |
-| Hosting | Railway |
-
-## Quick Start
-
-```bash
-# Clone
-git clone https://github.com/weekijie/Portfolio.git
-cd Portfolio
-
-# Run
-dotnet run
-```
-
-Open http://localhost:5257
-
-## Configuration
-
-### Profile Data
-Edit `Data/profile.json` to update:
-- Bio & contact info
-- Experience & education
-- Certifications & competitions
+- Bio, contact details, resume link
+- Experience and education
+- Certifications and competitions
 - Skills
 
-### EmailJS (Contact Form)
-1. Create account at [emailjs.com](https://emailjs.com)
-2. Create service and template
-3. Set environment variables:
-   ```
-   EmailJS__ServiceId=your_service_id
-   EmailJS__TemplateId=your_template_id
-   EmailJS__PublicKey=your_public_key
-   ```
+Featured repositories are generated at build time into `data/repos.json`.
+Browser-side config is generated at build time into `data/site-config.json`.
 
-### Documents
-Place PDFs in `wwwroot/documents/` and reference in `profile.json`:
-```json
-"proposalUrl": "/documents/MyProposal.pdf"
+## Local Build
+
+Build static output into `dist/`:
+
+```powershell
+pwsh ./scripts/build-pages.ps1
 ```
 
-## Deployment (Railway)
+Preview with any static file server from `dist/`.
 
-1. Push to GitHub
-2. Connect repo to [Railway](https://railway.app)
-3. Add environment variables
-4. Railway auto-deploys via Dockerfile
+## GitHub Pages Deploy
 
-## Project Structure
+Workflow file: `.github/workflows/deploy-pages.yml`
 
+On push to `main`, GitHub Actions:
+
+1. Copies static source from `site/`
+2. Fetches public repositories from GitHub
+3. Generates `data/site-config.json`
+4. Publishes `dist/` to GitHub Pages
+
+Target URL:
+
+- `https://weekijie.github.io/Portfolio/`
+
+## Required Secrets
+
+Optional EmailJS secrets for contact form:
+
+- `EMAILJS_PUBLIC_KEY`
+- `EMAILJS_SERVICE_ID`
+- `EMAILJS_TEMPLATE_ID`
+
+If secrets are missing, contact form stays visible and shows a configuration warning on submit.
+
+## Project Layout
+
+```text
+site/
+  index.html
+  css/
+  js/
+  data/
+  documents/
+scripts/
+  build-pages.ps1
+.github/workflows/
+  deploy-pages.yml
 ```
-Portfolio/
-├── Controllers/       # MVC controllers
-├── Data/              # profile.json
-├── Models/            # View models
-├── Services/          # GitHub & Profile services
-├── Views/             # Razor views
-├── wwwroot/           # Static assets (CSS, JS, documents)
-├── Dockerfile         # Container config
-└── Program.cs         # App configuration
-```
 
-## License
+## Legacy App
 
-MIT
+Old ASP.NET Core / Railway version is preserved in git history. A local safety branch named `pre-pages-migration` was created before this rewrite.
