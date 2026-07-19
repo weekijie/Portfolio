@@ -61,10 +61,16 @@ if (-not $startUrl.EndsWith("/")) {
 $indexPath = Join-Path $outputPath "index.html"
 $manifestPath = Join-Path $outputPath "manifest.json"
 
+if (-not (Test-Path $indexPath)) {
+    throw "Missing required file: $indexPath. Ensure site/index.html exists."
+}
 $indexContent = [System.IO.File]::ReadAllText($indexPath)
 $indexContent = $indexContent.Replace("{{SITE_URL}}", $SiteUrl.TrimEnd("/"))
 [System.IO.File]::WriteAllText($indexPath, $indexContent, [System.Text.Encoding]::UTF8)
 
+if (-not (Test-Path $manifestPath)) {
+    throw "Missing required file: $manifestPath. Ensure site/manifest.json exists."
+}
 $manifestContent = [System.IO.File]::ReadAllText($manifestPath)
 $manifestContent = $manifestContent.Replace("{{START_URL}}", $startUrl)
 [System.IO.File]::WriteAllText($manifestPath, $manifestContent, [System.Text.Encoding]::UTF8)
@@ -82,23 +88,27 @@ try {
         Where-Object { -not $_.fork -and $_.name -ne "Portfolio" } |
         Sort-Object -Property @(
             @{ Expression = { [int]$_.stargazers_count }; Descending = $true },
-            @{ Expression = { [datetime]$_.updated_at }; Descending = $true }
+            @{ Expression = { [System.DateTime]::Parse($_.updated_at, [System.Globalization.CultureInfo]::InvariantCulture, [System.Globalization.DateTimeStyles]::RoundtripKind) }; Descending = $true }
         ) |
         Select-Object -First 12 |
         ForEach-Object {
+            $description = if ($_.description) { $_.description } else { "" }
+            if ($_.name -eq "Lenz") {
+                $description = "$description — Gemini 3 Hackathon submission"
+            }
+            elseif ($_.name -eq "Sturgeon") {
+                $description = "$description — MedGemma Impact Challenge (Kaggle)"
+            }
+
             [ordered]@{
                 name = $_.name
-                description = switch ($_.name) {
-                    "Lenz" { "$(if ($_.description) { $_.description } else { "" }) Gemini 3 Hackathon submission"; break }
-                    "Sturgeon" { "$(if ($_.description) { $_.description } else { "" }) MedGemma Impact Challenge (Kaggle)"; break }
-                    default { if ($_.description) { $_.description } else { "" } }
-                }
+                description = $description
                 htmlUrl = $_.html_url
                 homepageUrl = if ($_.homepage) { $_.homepage } else { "" }
                 language = if ($_.language) { $_.language } else { "Unknown" }
                 stargazersCount = [int]$_.stargazers_count
                 forksCount = [int]$_.forks_count
-                updatedAt = ([datetime]$_.updated_at).ToString("o")
+                updatedAt = ([System.DateTime]::Parse($_.updated_at, [System.Globalization.CultureInfo]::InvariantCulture, [System.Globalization.DateTimeStyles]::RoundtripKind)).ToString("o")
                 topics = @($_.topics)
             }
         }
