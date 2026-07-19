@@ -1,7 +1,7 @@
 {
     "name": "Wee Ki Jie",
     "title": "Software Developer",
-    "bio": "Forward-thinking developer with a passion for AI and Machine Learning, backed by a strong background in enterprise-grade engineering.",
+    "bio": "Software developer focused on applied AI. Currently gaining enterprise engineering experience at Cognizant while independently shipping AI projects.",
     "location": "Singapore",
     "email": "kijiejob@gmail.com",
     "linkedIn": "https://www.linkedin.com/in/weekijie/",
@@ -15,9 +15,11 @@
             "type": "Full-time",
             "iconUrl": "https://www.google.com/s2/favicons?domain=cognizant.com&sz=128",
             "description": [
-                "Supporting a large-scale, highly customized Dynamics 365 implementation for thousands of users, focusing on stability and security.",
-                "Resolved complex production issues through reverse-engineering legacy code and remediating VAPT security findings.",
-                "Managed releases, hotfixes, and data patches while working closely with IT and business teams to communicate risks and root causes."
+                "Maintaining a Dynamics 365 CRM implementation serving thousands of users, supporting 99.9% SLA compliance under IM8 standards.",
+                "Diagnosed and resolved complex production incidents involving plugins, data errors, batch job errors, workflows, UI components, and security vulnerabilities by reverse-engineering and debugging legacy C# codebases.",
+                "Developed custom plugins, workflows, and third-party integrations to extend system functionality.",
+                "Managed application deployments and version control through GitLab CI/CD pipelines(SHIP-HATS), while identifying architectural limitations and collaborating with the team to implement long-term system improvements.",
+                "Collaborated with cross-functional teams to translate business requirements into technical solutions."
             ]
         },
         {
@@ -29,7 +31,7 @@
             "iconUrl": "https://www.google.com/s2/favicons?domain=essilorluxottica.com&sz=128",
             "description": [
                 "Developed a mobile app for biometric facial measurement using ML Kit's Face Detection API to support progressive lens fitting.",
-                "Built custom eyeglass detection and tracking models in PyTorch and applied OpenCV for lens contour extraction and optometric metric computation.",
+                "Used custom eyeglass detection and tracking model in PyTorch and applied OpenCV for lens contour extraction and optometric metric computation.",
                 "Created a real-time AR eyewear virtual try-on web app with Jeeliz VTO and gesture-based interaction via MediaPipe/Handsfree.js, enhanced by secondary-camera hand pose tracking."
             ]
         }
@@ -46,25 +48,18 @@
     ],
     "certifications": [
         {
+            "name": "Claude Certified Developer - Foundations",
+            "issuer": "Anthropic",
+            "issueDate": "July 2026",
+            "credentialUrl": "https://www.credly.com/badges/fcd79023-6431-48d1-a4e3-5c01a152aa7a/",
+            "iconUrl": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128"
+        },
+        {
             "name": "GitHub Copilot",
             "issuer": "Microsoft",
             "issueDate": "Jan 2026",
             "credentialUrl": "https://learn.microsoft.com/en-us/users/KiJie-7466/credentials/7D57AB1F9DF5A1E0?ref=https%3A%2F%2Fwww.linkedin.com%2F",
             "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
-        },
-        {
-            "name": "Git Complete: The definitive, step-by-step guide to Git",
-            "issuer": "Udemy",
-            "issueDate": "Sep 2025",
-            "credentialUrl": "https://www.udemy.com/certificate/UC-d5bd6fd3-682a-418a-982f-f96a5ea72df2/",
-            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
-        },
-        {
-            "name": "Understanding Agile 2025 | Complete Beginner's Guide",
-            "issuer": "Udemy",
-            "issueDate": "Sep 2025",
-            "credentialUrl": "https://udemy.com/certificate/UC-13914887-e2c3-4b4e-9d54-23a43b6224b2/",
-            "iconUrl": "https://www.google.com/s2/favicons?domain=udemy.com&sz=128"
         }
     ],
     "competitions": [
@@ -104,15 +99,18 @@
     ],
     "skills": [
         "C#",
-        "ASP.NET Core",
         "Python",
-        "Java",
         "JavaScript",
         "HTML/CSS",
-        "SQL Server",
+        "ASP.NET Core",
+        "FastAPI",
+        "Next.js",
+        "Node.js",
+        "PyTorch",
+        "ChromaDB",
         "Microsoft Dynamics 365",
+        "SQL Server",
         "Git",
-        "Android Studio",
-        "Agile"
+        "GitLab"
     ]
 }

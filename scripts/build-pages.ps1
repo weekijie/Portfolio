@@ -79,7 +79,7 @@ try {
     $repoApiUrl = "https://api.github.com/users/$GitHubUsername/repos?per_page=100&sort=updated"
     $repoResponse = Invoke-RestMethod -Uri $repoApiUrl -Headers $headers
     $repoSnapshot = $repoResponse |
-        Where-Object { -not $_.fork } |
+        Where-Object { -not $_.fork -and $_.name -ne "Portfolio" } |
         Sort-Object -Property @(
             @{ Expression = { [int]$_.stargazers_count }; Descending = $true },
             @{ Expression = { [datetime]$_.updated_at }; Descending = $true }
@@ -88,7 +88,11 @@ try {
         ForEach-Object {
             [ordered]@{
                 name = $_.name
-                description = if ($_.description) { $_.description } else { "" }
+                description = switch ($_.name) {
+                    "Lenz" { "$(if ($_.description) { $_.description } else { "" }) Gemini 3 Hackathon submission"; break }
+                    "Sturgeon" { "$(if ($_.description) { $_.description } else { "" }) MedGemma Impact Challenge (Kaggle)"; break }
+                    default { if ($_.description) { $_.description } else { "" } }
+                }
                 htmlUrl = $_.html_url
                 homepageUrl = if ($_.homepage) { $_.homepage } else { "" }
                 language = if ($_.language) { $_.language } else { "Unknown" }
